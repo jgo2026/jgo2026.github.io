@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Exo+2&family=Fredoka+One&family=Josefin+Sans&family=Lora&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<title>Page Title</title>
+<style>
+            * {
+                box-sizing: border-box;
+            }
+           .sidebar {
+               height: 100%;
+               width: 0;
+               position: fixed;
+               z-index: 1;
+               top: 0;
+               left: 0;
+               background-color:#DE8C8D;
+               overflow-x: hidden;
+               transition: 0.5s;
+               padding-top: 60px;
+            }
+            .sidebar a {
+               padding: 8px 8px 8px 32px;
+               text-decoration: none;
+               font-family: 'Josefin Sans', sans-serif;
+               font-size: 25px;
+               color: #FEF8C7;
+               display: block;
+               transition: 0.3s;
+            }
+            .sidebar a:hover {
+               color: #f1f1f1;
+            }
+            .sidebar .closebtn {
+               position: absolute;
+               top: 0;
+               right: 25px;
+               font-size: 36px;
+               margin-left: 50px;
+            }
+            .openbtn {
+               font-size: 20px;
+               font-family: 'Josefin Sans', sans-serif;
+               cursor: pointer;
+               background-color: #DE8C8D;
+               color: #FEF8C7;
+               padding: 10px 15px;
+               border: none;
+            }
+            .openbtn:hover {
+                background-color: #DE978C;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+            @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+            }
+            h1, h2 {
+                font-family: 'Fredoka One', cursive;
+            }
+            p {
+                font-family: 'Exo 2', sans-serif;
+            }
+           /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+            }
+           /* Clear floats after the columns */
+            .row:after {
+               content: "";
+               display: table;
+               clear: both;
+            }
+           /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+           @media screen and (max-width:600px) {
+            .column {
+               width: 100%;
+            }
+            }
+            .rectangle {
+               height: 48px;
+               width: 100%;
+               background-color: #DE8C8D;
+            }
+            #footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color:#DE8C8D;
+                color: white;
+                text-align: center;
+            } 
+            .container {
+               display: flex;
+               align-items: center;
+               justify-content: center
+            }
+            img {
+               max-width: 100%
+            }
+            .image {
+              flex-basis: 40%
+            }
+            .text {
+              font-size: 20px;
+              padding-left: 20px;
+            }
+</style>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>  
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./girl.html">Girl Groups</a></li>
+        <li><a href="./boy.html">Boy Groups</a></li>
+        <li><a href="./solo.html">Soloists</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <div id="main">
+        <div class="rectangle">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        </div>
+            <h1>About</h1>
+            <div class="container">
+                <div class="image">
+                  <img src="https://pm1.narvii.com/7110/178cce1bd1e12b0c1d08dad2313a62d7bdbdc668r1-652-619v2_hq.jpg" alt="photo of Woozi in teletubbies costume">
+                </div>
+                <div class="text">
+                  <h2>Juliana Elisha Go</h2>
+                   <h3>9-Balingkilat<br>Batch 2026</h3>
+                  <p>
+                    <ul>
+                        <li>fan of k-pop since 2018</li>
+                        <li>favorite groupS: SEVENTEEN and BLACKPINK</li>
+                        <li>bias: The8 and Jennie</li>
+                        <li>also a fan of K-dramas and C-pop</li>
+                    </ul>
+                </div>
+              </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+<div id="footer">
+    <p>Copyright &copy; 2022. Jgo2026 Foundation. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+</html>
