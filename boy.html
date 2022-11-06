@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Exo+2&family=Fredoka+One&family=Josefin+Sans&family=Lora&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<title>Page Title</title>
+<style>
+            * {
+                box-sizing: border-box;
+            }
+           .sidebar {
+               height: 100%;
+               width: 0;
+               position: fixed;
+               z-index: 1;
+               top: 0;
+               left: 0;
+               background-color:#DE8C8D;
+               overflow-x: hidden;
+               transition: 0.5s;
+               padding-top: 60px;
+            }
+            .sidebar a {
+               padding: 8px 8px 8px 32px;
+               text-decoration: none;
+               font-family: 'Josefin Sans', sans-serif;
+               font-size: 25px;
+               color: #FEF8C7;
+               display: block;
+               transition: 0.3s;
+            }
+            .sidebar a:hover {
+               color: #f1f1f1;
+            }
+            .sidebar .closebtn {
+               position: absolute;
+               top: 0;
+               right: 25px;
+               font-size: 36px;
+               margin-left: 50px;
+            }
+            .openbtn {
+               font-size: 20px;
+               font-family: 'Josefin Sans', sans-serif;
+               cursor: pointer;
+               background-color: #DE8C8D;
+               color: #FEF8C7;
+               padding: 10px 15px;
+               border: none;
+            }
+            .openbtn:hover {
+                background-color: #DE978C;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+            @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+            }
+            #header {
+                background-image: url('https://kprofiles.com/wp-content/uploads/2018/08/Turbo.jpg');
+                height: 400px;
+                background-position: center top;
+                background-size: cover;
+                animation: pls infinite;
+                animation-duration: 25s;
+                padding-top: 50px
+            }
+            @keyframes pls {
+                0% {background-image: url('https://kprofiles.com/wp-content/uploads/2018/08/Turbo.jpg');}
+                25% {background-image: url('https://contents.pep.ph/images2/images2/2022/10/09/enhypen-1665300516.jpg');}
+                50% {background-image: url('https://cdn.shopify.com/s/files/1/0079/3041/3115/files/1230x650-2a177fb02a_large.jpg?v=1570076543');}
+                75% {background-image: url('https://kelandmelreviews.files.wordpress.com/2018/11/tvxq-yunho-changmin1.jpg');}
+                100% {background-image: url('https://images.squarespace-cdn.com/content/v1/56eb012f27d4bd29de975fae/1635096663447-8LC4D8O8GX0BYB3B14W3/HOK_Seventeen_Header.jpg?format=1500w');}
+            }
+            #pagetitle {
+                font-family: 'Fredoka One', cursive;
+                font-size: 32pt;
+                color: black;
+                padding-top: 200px;
+                padding-left: 20px;
+            }
+            h1, h2 {
+                font-family: 'Fredoka One', cursive;
+            }
+            p {
+                font-family: 'Exo 2', sans-serif;
+            }
+           /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+            }
+           /* Clear floats after the columns */
+            .row:after {
+               content: "";
+               display: table;
+               clear: both;
+            }
+           /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+           @media screen and (max-width:600px) {
+            .column {
+               width: 100%;
+            }
+            }
+            .rectangle {
+               height: 48px;
+               width: 100%;
+               background-color: #DE8C8D;
+            }
+            #footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color:#DE8C8D;
+                color: white;
+                text-align: center;
+            } 
+</style>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>  
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./girl.html">Girl Groups</a></li>
+        <li><a href="./boy.html">Boy Groups</a></li>
+        <li><a href="./solo.html">Soloists</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <div id="main">
+        <div class="rectangle">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        </div>
+        <div id="header">
+            <p id="pagetitle">Boy Groups</p>
+        </div>
+    <p>Due to the sheer number of boy groups, I'm only presenting the more popular groups.</p>
+    <h1>First Generation</h1>    
+        <div class="row">
+            <div class="column">
+              <h2>H.O.T.</h2>
+              <p>- part of SM entertainment<br>- Debuted in 1996<br> Members:
+                <ul>
+                    <li>Moon Hee-joon</li>
+                    <li>Jang Woo-Hyuk</li>
+                    <li>Tony Ahn</li>
+                    <li>Kangta</li>
+                    <li>Lee Jae-won</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+              <p><img src="https://0.soompi.io/wp-content/uploads/2018/02/10145730/h.o.t2.jpg?s=7x5&e=t" alt="H.O.T. group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/XQwsh9Ob2e0"  ></iframe><br>H.O.T - Candy, HOT - 캔디, MBC Top Music 19961207</p>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="column">
+              <h2>SECHSKIES</h2>
+              <p>- part of YG ENTERTAINMENT<br>- Debuted in 1997<br> Members:
+                <ul>
+                    <li>Eun Ji-won</li>
+                    <li>Lee Jai-jin</li>
+                    <li>Kim Jae-duck</li>
+                    <li>Jang Su-won</li>
+                    <li>Kang Sung-hoon (former)</li>
+                    <li>Ko Ji-yong (former)</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://6.viki.io/image/a978699ff83b4d9f807d33d9ae6f35ea.jpeg?s=900x600&e=t" alt="Sechs Kies group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/42GaJk4YNLQ"></iframe><br>SECHSKIES - ‘커플 (COUPLE)’ M/V</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <h2>SHINHWA</h2>
+              <p>- part of SM ENTERTAINMENT<br>- Debuted in 1998<br> Members:
+                <ul>
+                    <li>Eric Mun</li>
+                    <li>Lee Min-woo</li>
+                    <li>Kim Dong-wan</li>
+                    <li>Shin Hye-Sung</li>
+                    <li>Jun Jin</li>
+                    <li>Andy Lee</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+              <p><img src="https://www.allkpop.com/upload/2022/08/content/162032/web_data/allkpop_1660696489_20220816-shinhwa.jpg" alt="Shinhwa group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/Lxe9yXVa24Q" ></iframe><br>SHINHWA 신화 'Perfect Man' MV</p>
+            </div>
+        </div> 
+        <h1>Second Generation</h1>
+        <div class="row">
+          <div class="column">
+             <h2>SUPER JUNIOR</h2>
+             <p>- part of SM Entertainment<br>- Debuted in 2005<br> Members:
+              <ul>
+                  <li>Leetuek</li>
+                  <li>Heechul</li>
+                  <li>Yesung</li>
+                  <li>Shindong</li>
+                  <li>Sungmin</li>
+                  <li>Eunhyuk</li>
+                  <li>Donghae</li>
+                  <li>Siwon</li>
+                  <li>Ryeowook</li>
+                  <li>Kyunhyun</li>
+                  <li>Hangeng (former)</li>
+                  <li>Kangin (former)</li>
+                  <li>Kibum (former)</li>
+              </ul>
+          </div>
+      
+      <div class="column">
+        <p><img src="https://6.viki.io/image/29bca768a69a43d599cb093a45681d21.jpeg?s=900x600&e=t" alt="Super Junior group photo" style="width:420px;height:240px;"></p>
+      </div>
+      
+      <div class="column">
+        <p><iframe width="420" height="240"  src="https://www.youtube.com/embed/r6TwzSGYycM"  ></iframe><br>SUPER JUNIOR 슈퍼주니어 'Mr. Simple' MV</p>
+      </div>
+      </div> 
+        <div class="row">
+            <div class="column">
+              <h2>BIG BANG</h2>
+              <p>- part of YG Entertainment<br>- Debuted in 2006<br> Members:
+                <ul>
+                    <li>T.O.P</li>
+                    <li>Taeyang</li>
+                    <li>G-Dragon</li>
+                    <li>Daesung</li>
+                    <li>Seungri (former)</li>
+                </ul>
+            </div>
+            
+            <div class="column">
+              <p><img src="https://media.philstar.com/photos/2022/02/07/bigbang_2022-02-07_13-43-35860_thumbnail.jpg" alt="Big Bang group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240"  src="https://www.youtube.com/embed/2ips2mM7Zqw" ></iframe><br>BIGBANG - 뱅뱅뱅 (BANG BANG BANG) M/V</p>
+            </div>
+        </div> 
+        <div class="row">
+           <div class="column">
+               <h2>SHINEE</h2>
+               <p>- part of SM Entertainment<br>- Debuted in 2008<br> Members:
+                 <ul>
+                    <li>Onew</li>
+                    <li>Key</li>
+                    <li>Minho</li>
+                    <li>Taemin</li>
+                    <li>Jonghyun (former)</li>
+                  </ul>
+        </div>
+        
+        <div class="column">
+          <p><img src="https://0.soompi.io/wp-content/uploads/2018/02/17044223/SHINee.jpg?s=900x600&e=t" alt="SHINee group photo" style="width:420px;height:240px;"></p>
+        </div>
+        
+        <div class="column">
+          <p><iframe width="420" height="240" src="https://www.youtube.com/embed/roughtzsCDI"></iframe><br>SHINee 샤이니 'Ring Ding Dong' MV</p>
+        </div>
+        </div> 
+        <h1>Third Generation</h1>
+        <div class="row">
+            <div class="column">
+              <h2>EXO</h2>
+              <p>- part of SM Entertainment<br>- Debuted in 2012<br> Members:
+                <ul>
+                    <li>Xiumin</li>
+                    <li>Suho</li>
+                    <li>Lay</li>
+                    <li>Baekhyun</li>
+                    <li>Chen</li>
+                    <li>Chanyeol</li>
+                    <li>D.O.</li>
+                    <li>Kai</li>
+                    <li>Sehun</li>
+                    <li>Luhan (former)</li>
+                    <li>Kris (former)</li>
+                    <li>Tao (former)</li>
+                  </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://6.viki.io/image/1da7aac233884e94817a1554f6963a47.jpeg?s=900x600&e=t" alt="EXO group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/pSudEWBAYRE"></iframe><br>EXO 엑소 'Love Shot' MV</p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <h2>BTS</h2>
+              <p>- part of Big Hit Entertainment<br>- Debuted in 2013<br> Members:
+                <ul>
+                    <li>Jin</li>
+                    <li>Suga</li>
+                    <li>J-Hope</li>
+                    <li>RM</li>
+                    <li>Jimin</li>
+                    <li>V</li>
+                    <li>Jungkook</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/canvas/2021/07/08/62d30fc0-81a2-4093-b5aa-182a94855233_386389bf.jpg?itok=394kwgGN&v=1625719813" alt="BTS group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/XsX3ATc3FbA"  ></iframe><br>BTS (방탄소년단) '작은 것들을 위한 시 (Boy With Luv) (feat. Halsey)' Official MV</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <h2>SEVENTEEN</h2>
+              <p>- part of PLEDIS Entertainment<br>- Debuted in 2015<br> Members:
+                <ul>
+                    <li>S.Coups</li>
+                    <li>Jeonghan</li>
+                    <li>Joshua</li>
+                    <li>Jun</li>
+                    <li>Hoshi</li>
+                    <li>Wonwoo</li>
+                    <li>Woozi</li>
+                    <li>DK</li>
+                    <li>Mingyu</li>
+                    <li>The8</li>
+                    <li>Seungkwan</li>
+                    <li>Vernon</li>
+                    <li>Dino</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://www.allkpop.com/upload/2022/04/content/211203/1650557003-untitled-1.jpg" alt="Seventeen group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/zEkg4GBQumc" ></iframe><br>[M/V] SEVENTEEN(세븐틴) - 울고 싶지 않아 (Don't Wanna Cry)</p>
+            </div>
+        </div>
+        <h1>Fourth Generation</h1>
+        <div class="row">
+            <div class="column">
+              <h2>STRAY KIDS</h2>
+              <p>- part of JYP Entertainment<br>- Debuted in 2018<br> Members:
+                <ul>
+                    <li>Bang Chan</li>
+                    <li>Lee Know</li>
+                    <li>Changbin</li>
+                    <li>Hyunjin</li>
+                    <li>Han</li>
+                    <li>Felix</li>
+                    <li>Seungmin</li>
+                    <li>I.N</li>
+                    <li>Woojin (former)</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://www.musicmundial.com/en/wp-content/uploads/2021/10/Is-Stray-Kids-the-future-of-K-pop.-750x536.jpg" alt="Stray Kids group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240"  src="https://www.youtube.com/embed/TQTlCHxyuu8" ></iframe><br>Stray Kids "神메뉴(God's Menu)" M/V</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <h2>ATEEZ</h2>
+              <p>- part of KQ Entertainment<br>- Debuted in 2018<br> Members:
+                <ul>
+                    <li>Hongjoong</li>
+                    <li>Seonghwa</li>
+                    <li>Yunho</li>
+                    <li>Yeosang</li>
+                    <li>San</li>
+                    <li>Mingi</li>
+                    <li>Wooyoung</li>
+                    <li>Jongho</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://thebiaslistcom.files.wordpress.com/2022/01/ateez-dont-stop.jpg?w=640" alt="Ateez group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/Z_BhMhZpAug"  ></iframe><br>ATEEZ(에이티즈) - 'WONDERLAND' Official MV</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <h2>TOMORROW X TOGETHER</h2>
+              <p>- part of Big Hit Entertainment<br>- Debuted in 2019<br> Members:
+                <ul>
+                    <li>Yeonjun</li>
+                    <li>Soobin</li>
+                    <li>Beomgyu</li>
+                    <li>Taehyun</li>
+                    <li>HueniongKai</li>
+                </ul>
+            </div>
+            <div class="column">
+              <p><img src="https://6.viki.io/image/128b88e38c8341c48618ac68e892e904/dummy.jpeg?s=900x600&e=t" alt="TXT group photo" style="width:420px;height:240px;"></p>
+            </div>
+            
+            <div class="column">
+              <p><iframe width="420" height="240" src="https://www.youtube.com/embed/6yWPfUz0z94" ></iframe><br>TXT (투모로우바이투게더) '9와 4분의 3 승강장에서 너를 기다려 (Run Away)' Official MV</p>
+            </div>
+        </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+<div id="footer">
+    <p>Copyright &copy; 2022. Jgo2026 Foundation. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+</html>
